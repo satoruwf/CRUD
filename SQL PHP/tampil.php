@@ -22,6 +22,8 @@ $query = mysqli_query($koneksi, "select * from tb_skincare");
 <tr>
             <td>Id</td>
             <td>Nama</td>
+            <td>Id Kategori</td>
+
         </tr>
 
     <?php while($data = mysqli_fetch_array($query)){ ?>
@@ -30,7 +32,10 @@ $query = mysqli_query($koneksi, "select * from tb_skincare");
         <tr>
             <td><?php echo $data['id']?></td>
             <td><?php echo $data['nama']?></td>
+            <td><?php echo $data['id_kategori']?></td>
         </tr>  
-</table>
+
 
 <?php } ?>
+
+</table>
